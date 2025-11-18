@@ -134,7 +134,7 @@
 
 .ion-button:hover {
   --background: var(--color-accent);
-  transform: translateY(-1px);
+  transform: translateY(-1px) scale(1.02);
   box-shadow: var(--shadow-md);
 }
 

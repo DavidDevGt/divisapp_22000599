@@ -2,6 +2,9 @@
   <ion-card>
     <ion-card-header>
       <ion-card-title>{{ label }}</ion-card-title>
+      <ion-button fill="clear" size="small" (click)="copyResult()" class="copy-button" aria-label="Copiar resultado">
+        <ion-icon slot="icon-only" name="copy"></ion-icon>
+      </ion-button>
     </ion-card-header>
     <ion-card-content>
       <h2>{{ result | number:'1.2-2' }} USD</h2>

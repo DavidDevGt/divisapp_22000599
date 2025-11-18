@@ -23,14 +23,22 @@
             <div class="converter-form">
                 <app-input-number
                     label="Monto en GTQ"
-                    placeholder="Ej: 80"
+                    placeholder="Ingresa monto en GTQ"
                     [(value)]="amountGTQ"
                     (valueChange)="onAmountChange($event)">
                 </app-input-number>
 
-                <ion-button expand="block" (click)="convert()">
-                    Convertir
-                </ion-button>
+                <div class="button-group">
+                    <ion-button expand="block" (click)="convert()" class="convert-button">
+                        <ion-icon slot="start" name="swap-horizontal"></ion-icon>
+                        Convertir
+                    </ion-button>
+
+                    <ion-button fill="outline" (click)="clear()" class="clear-button" aria-label="Limpiar campos">
+                        <ion-icon slot="start" name="close-circle"></ion-icon>
+                        Limpiar
+                    </ion-button>
+                </div>
 
                 <app-result-display
                     *ngIf="convertedAmount !== null"

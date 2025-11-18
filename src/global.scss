@@ -89,6 +89,12 @@ a:hover {
   text-decoration: underline;
 }
 
+// Focus visible for accessibility
+*:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
 // Utility Classes
 .text-center { text-align: center; }
 .text-left { text-align: left; }

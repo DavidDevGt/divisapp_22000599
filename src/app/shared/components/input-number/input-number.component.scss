@@ -23,6 +23,22 @@
     border-color: var(--color-border-hover);
 }
 
+.input-number-container ::ng-deep ion-item.item-has-focus {
+    --border-color: var(--color-accent);
+    box-shadow: 0 0 0 2px rgba(0, 122, 255, 0.2);
+    border-color: var(--color-accent);
+}
+
+.input-number-container.error ::ng-deep ion-item {
+    --border-color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.input-number-container.error ::ng-deep ion-item.item-has-focus {
+    --border-color: var(--color-error);
+    box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
+}
+
 .input-number-container ::ng-deep ion-label {
     font-family: var(--font-family-primary);
     font-weight: var(--font-weight-medium);

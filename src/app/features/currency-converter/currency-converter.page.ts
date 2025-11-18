@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/angular/standalone';
+import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton, IonIcon } from '@ionic/angular/standalone';
 import { CommonModule } from '@angular/common';
 import { Exchange } from '../../core/services/exchange';
 import { InputNumberComponent } from '../../shared/components/input-number/input-number.component';
@@ -15,6 +15,7 @@ import { ResultDisplayComponent } from '../../shared/components/result-display/r
     IonTitle,
     IonContent,
     IonButton,
+    IonIcon,
     CommonModule,
     InputNumberComponent,
     ResultDisplayComponent
@@ -37,5 +38,10 @@ export class CurrencyConverterPage {
       console.error('Error converting currency:', error);
       this.convertedAmount = null;
     }
+  }
+
+  clear() {
+    this.amountGTQ = 0;
+    this.convertedAmount = null;
   }
 }
