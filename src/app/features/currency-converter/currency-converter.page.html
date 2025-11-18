@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>
+            DivisApp
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">DivisApp</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <div class="converter-container">
+        <div class="converter-content">
+            <h1 class="converter-title">Conversor de Divisas</h1>
+            <p class="converter-description">
+                Ingresa el monto en Quetzales (GTQ) y convierte a Dólares (USD).
+            </p>
+
+            <div class="converter-form">
+                <app-input-number
+                    label="Monto en GTQ"
+                    placeholder="Ej: 80"
+                    [(value)]="amountGTQ"
+                    (valueChange)="onAmountChange($event)">
+                </app-input-number>
+
+                <ion-button expand="block" (click)="convert()">
+                    Convertir
+                </ion-button>
+
+                <app-result-display
+                    *ngIf="convertedAmount !== null"
+                    [result]="convertedAmount"
+                    label="Equivalente en USD">
+                </app-result-display>
+            </div>
+        </div>
+    </div>
+</ion-content>

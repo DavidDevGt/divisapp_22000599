@@ -2,12 +2,13 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
+    path: 'currency-converter',
+    loadComponent: () => import('./features/currency-converter/currency-converter.page').then((m) => m.CurrencyConverterPage),
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'currency-converter',
     pathMatch: 'full',
   },
 ];
+

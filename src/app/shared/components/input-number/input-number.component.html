@@ -1,0 +1,11 @@
+<div class="input-number-container">
+  <ion-item>
+    <ion-label position="stacked">{{ label }}</ion-label>
+    <ion-input
+      type="number"
+      [placeholder]="placeholder"
+      [value]="value"
+      (ionInput)="onValueChange($event)">
+    </ion-input>
+  </ion-item>
+</div>
