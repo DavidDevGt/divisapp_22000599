@@ -1,2 +1,208 @@
-// For information on how to create your own theme, please refer to:
-// https://ionicframework.com/docs/theming/
+// Design System - Notion-inspired Minimalist Theme for DivisApp
+
+// Colors
+:root {
+  --color-primary: #ffffff;
+  --color-secondary: #f7f7f7;
+  --color-accent: #007aff;
+  --color-text-primary: #37352f;
+  --color-text-secondary: #787774;
+  --color-text-muted: #a3a3a3;
+  --color-border: #e9ecef;
+  --color-border-hover: #d1d5db;
+  --color-background: #ffffff;
+  --color-surface: #fafafa;
+  --color-error: #ef4444;
+  --color-success: #10b981;
+}
+
+// Spacing System (based on 4px grid)
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+}
+
+// Typography
+:root {
+  --font-family-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 30px;
+  --font-size-4xl: 36px;
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+// Shadows
+:root {
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+// Border Radius
+:root {
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+}
+
+// Transitions
+:root {
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}
+
+// Breakpoints
+:root {
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+}
+
+// Ionic Overrides for Notion Style
+.ion-page {
+  background-color: var(--color-background);
+}
+
+.ion-header {
+  background-color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.ion-toolbar {
+  --background: var(--color-primary);
+  --color: var(--color-text-primary);
+  --border-color: var(--color-border);
+}
+
+.ion-title {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  color: var(--color-text-primary);
+}
+
+.ion-content {
+  --background: var(--color-background);
+  --padding-start: var(--space-4);
+  --padding-end: var(--space-4);
+  --padding-top: var(--space-4);
+  --padding-bottom: var(--space-4);
+}
+
+.ion-button {
+  --background: var(--color-accent);
+  --background-hover: var(--color-accent);
+  --background-activated: var(--color-accent);
+  --color: var(--color-primary);
+  --border-radius: var(--radius-md);
+  --padding-start: var(--space-6);
+  --padding-end: var(--space-6);
+  --padding-top: var(--space-3);
+  --padding-bottom: var(--space-3);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-base);
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+}
+
+.ion-button:hover {
+  --background: var(--color-accent);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+.ion-item {
+  --background: var(--color-primary);
+  --border-color: var(--color-border);
+  --border-radius: var(--radius-md);
+  --padding-start: var(--space-4);
+  --padding-end: var(--space-4);
+  --padding-top: var(--space-3);
+  --padding-bottom: var(--space-3);
+  --inner-padding-end: 0;
+  margin-bottom: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.ion-item:hover {
+  --border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-md);
+}
+
+.ion-label {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.ion-input {
+  --color: var(--color-text-primary);
+  --placeholder-color: var(--color-text-muted);
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+}
+
+.ion-card {
+  --background: var(--color-primary);
+  --color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  margin: 0;
+  transition: all var(--transition-fast);
+}
+
+.ion-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.ion-card-title {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-lg);
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-2);
+}
+
+.ion-card-content {
+  padding: var(--space-4);
+}
+
+.ion-card-content h2 {
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-2xl);
+  color: var(--color-accent);
+  margin: 0;
+}
