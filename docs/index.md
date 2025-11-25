@@ -77,13 +77,6 @@ graph TD
 - **Branching**: Git Flow con protección de ramas principales
 - **Commits**: Conventional Commits
 - **Security**: Análisis SAST/DAST en pipeline
-
-## 📞 Contactos
-
-- **Arquitecto Principal**: [Nombre] - arquitectura@divisapp.com
-- **DevOps Lead**: [Nombre] - devops@divisapp.com
-- **QA Lead**: [Nombre] - qa@divisapp.com
-
 ---
 
-*Última actualización: Diciembre 2025*
+*Última actualización: 24 noviembre 2025*
