@@ -423,9 +423,13 @@ npx cap add ios
 Contribuir a DivisApp es una excelente manera de:
 
 ✅ **Aprender**: Tecnologías modernas (Ionic, Angular, Capacitor)
+
 ✅ **Crecer**: Mejores prácticas de desarrollo enterprise
+
 ✅ **Contribuir**: Impacto real en usuarios
+
 ✅ **Colaborar**: Trabajo en equipo con profesionales
+
 ✅ **Reconocimiento**: Créditos por tu trabajo
 
 ¡Gracias por contribuir a hacer DivisApp mejor! 🚀

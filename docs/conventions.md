@@ -484,10 +484,15 @@ convertGTQToUSD(amountGTQ: number): number {
 Siguiendo estas convenciones, DivisApp mantiene:
 
 ✅ **Consistencia**: Estándares uniformes en todo el proyecto
+
 ✅ **Mantenibilidad**: Código fácil de entender y modificar
+
 ✅ **Calidad**: Testing y linting automatizados
+
 ✅ **Performance**: Optimizaciones para móviles
+
 ✅ **Seguridad**: Principios de seguridad integrados
+
 ✅ **Escalabilidad**: Arquitectura preparada para crecimiento
 
 Estas convenciones deben revisarse y actualizarse regularmente para incorporar nuevas mejores prácticas y tecnologías.

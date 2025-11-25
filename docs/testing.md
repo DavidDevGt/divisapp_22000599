@@ -594,10 +594,15 @@ describe('ComponentName', () => {
 La estrategia de testing de DivisApp asegura:
 
 ✅ **Calidad**: Cobertura completa con múltiples niveles
+
 ✅ **Confianza**: Tests automatizados en CI/CD
+
 ✅ **Mantenibilidad**: Tests legibles y organizados
+
 ✅ **Performance**: Tests rápidos y eficientes
+
 ✅ **Accesibilidad**: Testing inclusivo
+
 ✅ **Escalabilidad**: Framework preparado para crecimiento
 
 Esta estrategia proporciona una base sólida para el desarrollo continuo y el mantenimiento de la calidad del código.
